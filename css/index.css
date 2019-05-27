@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+HK|Ropa+Sans&display=swap');
+
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+.background {
+    background-color: #f4f5f7;
+}
+
+header .nav .logo {
+    display: flex;
+    font-family: 'Ropa Sans', cursive;
+    font-size: 2rem;
+    text-align: center;
+    margin-left: 2rem;
+}
+
+header .nav .menu ul {
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+header .nav .menu ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+header .nav .menu ul li a:hover {
+    border: 1px solid black;
+}
+
+@media (min-width: 450px) {
+    header .nav {
+        display: flex;
+        align-items: center;
+        flex: 1;
+    }
+
+    header .nav .menu {
+        flex: 1;
+    }
+
+}
+
+h1 {
+    font-family: 'Ropa Sans', cursive;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.info-about-me .stepan-petrykovych {
+    background-image: url(../img/stepan-petrykovych.jpg);
+    min-height: 400px;
+    max-width: 800px;
+    background-position: center;
+    margin-left: 5rem;
+    background-size: cover;
+    display: flex;
+}
+
+.info-about-me p {
+    display: flex;
+    align-items: center;
+    font-family: 'Noto Sans HK', cursive;
+    font-size: 1rem;
+    color: black;
+    margin: 2rem 2rem 2rem 2rem;
+}
+
+.info-about-projects .working-process {
+    background-image: url(../img/working.jpg);
+    min-height: 400px;
+    max-width: 800px;
+    background-position: center;
+    margin-left: 5rem;
+    background-size: cover;
+    display: flex;
+}
+
+.info-about-projects p {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: 'Noto Sans HK', cursive;
+    font-size: 1rem;
+    color: black;
+    margin: 2rem 2rem;
+}
+
+.my-contacts p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Noto Sans HK', cursive;
+    font-size: 1rem;
+    color: black;
+    margin: 2rem 2rem;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    font-family: 'Noto Sans HK', cursive;
+    font-size: 1rem;
+    flex-direction: row;
+    color: black;
+}
