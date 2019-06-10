@@ -2,7 +2,7 @@
 
 body {
     background-color: #f4f5f7;
-    width: 980px;
+    max-width: 980px;
 }
 
 .background {
