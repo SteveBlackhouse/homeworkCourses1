@@ -7,73 +7,137 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My introducing page</title>
     <link rel="stylesheet" href="css/index.css" type="text/css" />
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
 </head>
 
 <body>
     <div class="background">
         <header>
-            <div class="nav">
-                <div class="logo">Stepan Petrykovych</div>
-                <nav class="menu">
-                    <ul>
-                        <li><a href="#about-me">About Me</a></li>
-                        <li><a href="#my-projects">My Projects</a></li>
-                        <li><a href="#contacts">Contacts</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Vydelka</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link active" href="#about-me">About me<span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link" href="#my-projects">My projects</a>
+                        <a class="nav-item nav-link" href="#contacts">Contacts</a>
+                    </div>
+                </div>
+            </nav>
         </header>
-        <h1 id="about-me">Some info about me</h1>
-        <div class="info-about-me">
-            <div class="stepan-petrykovych"></div>
-            <p>
-                Hey! I'm Stepan and i'm 19 year's old. Right now I'm studying at Lviv Politechnic on faculty Systems Ingineering (Internet of Things). I love to spend my time with friends cause I'm very communicative.
-            </p>
-        </div>
-        <h1 id="my-projects">
-            At this part I'm gonna show you, what experiance I have at programming
-        </h1>
-        <div class="info-about-projects">
-            <div class="working-process"></div>
-            <p>
-                Easy Parking (February 2018 – now) - is designed to help drivers quickly find a free space, improve parking space and ease traffic. Sensors embedded in the ground will determine whether parking spaces are occupied or free. Drivers will be able to get
-                real-time parking information. Drivers will be able to easily find a free space using a map when only a few parking spaces are available.</p>
-            <p>
-                <b>Technologies:</b> C/C++, microcontrollers
-            </p>
-            <p>
-                <b>Role:</b>Hardware developer(working with ESP32, that works with Lora)
-            </p>
-            <p>
-                Praxis (February 2018 – May 2018) - Praxis is a web service that will offer you a new approach to dealing with course problem, both for companies that create this course and for students who want to go through it.</p>
-            <p>
-                <b>Technologies:</b> Python(Flask)
-            </p>
-            <p>
-                <b>Role:</b> Back-End
-            </p>
-        </div>
-        <h1 id="contacts">How you can contact with me</h1>
-        <div class="my-contacts">
-            <p>
-                So, you can find me on instagram, or facebook
-            </p>
-            <div>
-                <a href="https://www.facebook.com/stepan.petryykovych">Facebook</a>
-                <a href="https://www.instagram.com">Instagram</a>
-                <p>Or you can send me some message at this form</p>
-                <form class="send-message">
-                    <input type="text" name="Your Name" placeholder="Enter your name" />
-                    <br>
-                    <input type="text" name="Your message" placeholder="Ask something" />
-                    <br>
-                    <input class="button" type="submit" value="Submit" />
-                </form>
+        <h1 id="about-me"></h1>
+        <div>
+            <div class="media">
+                <img src="img/stepan-petrykovych.jpg" class="mr-3" alt="...">
+                <div class="media-body">
+                    <h5 class="mt-0">Some info about me</h5>
+                    Hey! I'm Stepan and i'm 19 year's old. Right now I'm studying at Lviv Politechnic on faculty Systems Ingineering (Internet of Things). I love to spend my time with friends cause I'm very communicative.
+                </div>
             </div>
-            <footer>
-                Copyright. Bla bla bla bla
-            </footer>
+            <h1 id="my-projects"></h1>
+            <div>
+                <div class="media">
+                    <div class="media-body">
+                        <h5 class="mt-0 mb-1">Programming experiance</h5>
+                        At this part I'm gonna show you, what experiance I have at programming
+                    </div>
+                    <img src="img/working.jpg" class="ml-3" alt="...">
+                </div>
+                <div class="row">
+                    <article class="card col-12 col-sm-6 col-md-4 col-lg-3">
+                        <img src="img/working.jpg" class="card-img-top" alt="Tesla Model X">
+                        <div class="card-body">
+                            <h5 class="card-title">Easy Parking</h5>
+                            <p class="card-text">Easy Parking (February 2018 – now)</p>
+                            <a href="#" class="btn btn-info" data-toggle="modal" data-target="#productInfo">Info</a>
+                        </div>
+                    </article>
+                    <article class="card col-12 col-sm-6 col-md-4 col-lg-3">
+                        <img src="img/working.jpg" class="card-img-top" alt="Tesla Model X">
+                        <div class="card-body">
+                            <h5 class="card-title">Praxis</h5>
+                            <p class="card-text">Praxis (February 2018 – May 2018)</p>
+                            <a href="#" class="btn btn-info" data-toggle="modal" data-target="#productInfo">Info</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="working-process"></div>
+                <p>
+                    Easy Parking (February 2018 – now) - is designed to help drivers quickly find a free space, improve parking space and ease traffic. Sensors embedded in the ground will determine whether parking spaces are occupied or free. Drivers will be able to get
+                    real-time parking information. Drivers will be able to easily find a free space using a map when only a few parking spaces are available.</p>
+                <p>
+                    <b>Technologies:</b> C/C++, microcontrollers
+                </p>
+                <p>
+                    <b>Role:</b>Hardware developer(working with ESP32, that works with Lora)
+                </p>
+                <p>
+                    Praxis (February 2018 – May 2018) - Praxis is a web service that will offer you a new approach to dealing with course problem, both for companies that create this course and for students who want to go through it.</p>
+                <p>
+                    <b>Technologies:</b> Python(Flask)
+                </p>
+                <p>
+                    <b>Role:</b> Back-End
+                </p>
+            </div>
+            <h1 id="contacts">How you can contact with me</h1>
+            <div class="my-contacts">
+                <p>
+                    So, you can find me on instagram, or facebook
+                </p>
+                <div>
+                    <a href="https://www.facebook.com/stepan.petryykovych">Facebook</a>
+                    <a href="https://www.instagram.com">Instagram</a>
+                    <p>Or you can send me some message at this form</p>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <span class="input-group-text" id="basic-addon2">@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="productInfo" tabindex="-1" role="dialog" aria-labelledby="productInfoLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="productInfoLabel">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <article class="card">
+                                    <img src="img/working.jpg" class="card-img-top" alt="Tesla Model X">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Tesla X</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        <footer>
+            Copyright. Bla bla bla bla
+        </footer>
+    </div>
 </body>
 
 </html>
