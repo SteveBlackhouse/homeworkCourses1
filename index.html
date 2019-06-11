@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My introducing page</title>
-    <link rel="stylesheet" href="css/index.css" type="text/css" />
     <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
     <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css" type="text/css" />
 </head>
 
 <body>
     <div class="background">
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">Vydelka</a>
+                <a class="navbar-brand" href="#">Stepan Petrykovych</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                 </button>
@@ -30,58 +30,42 @@
         </header>
         <h1 id="about-me"></h1>
         <div>
-            <div class="media">
-                <img src="img/stepan-petrykovych.jpg" class="mr-3" alt="...">
-                <div class="media-body">
-                    <h5 class="mt-0">Some info about me</h5>
+            <h1 id="about-me">Some info about me</h1>
+            <div class="info-about-me">
+                <div class="stepan-petrykovych"></div>
+                <p>
                     Hey! I'm Stepan and i'm 19 year's old. Right now I'm studying at Lviv Politechnic on faculty Systems Ingineering (Internet of Things). I love to spend my time with friends cause I'm very communicative.
-                </div>
+                </p>
             </div>
-            <h1 id="my-projects"></h1>
-            <div>
-                <div class="media">
-                    <div class="media-body">
-                        <h5 class="mt-0 mb-1">Programming experiance</h5>
-                        At this part I'm gonna show you, what experiance I have at programming
-                    </div>
-                    <img src="img/working.jpg" class="ml-3" alt="...">
-                </div>
-                <div class="row">
-                    <article class="card col-12 col-sm-6 col-md-4 col-lg-3">
-                        <img src="img/working.jpg" class="card-img-top" alt="Tesla Model X">
-                        <div class="card-body">
-                            <h5 class="card-title">Easy Parking</h5>
-                            <p class="card-text">Easy Parking (February 2018 – now)</p>
-                            <a href="#" class="btn btn-info" data-toggle="modal" data-target="#easyParking">Info</a>
-                        </div>
-                    </article>
-                    <article class="card col-12 col-sm-6 col-md-4 col-lg-3">
-                        <img src="img/working.jpg" class="card-img-top" alt="Tesla Model X">
-                        <div class="card-body">
-                            <h5 class="card-title">Praxis</h5>
-                            <p class="card-text">Praxis (February 2018 – May 2018)</p>
-                            <a href="#" class="btn btn-info" data-toggle="modal" data-target="#praxis">Info</a>
-                        </div>
-                    </article>
-                </div>
+        </div>
+        <h1 id="my-projects"></h1>
+        <div>
+            <h1 id="my-projects">
+                At this part I'm gonna show you, what experiance I have at programming
+            </h1>
+            <div class="info-about-projects">
                 <div class="working-process"></div>
-                <p>
-                    Easy Parking (February 2018 – now) - is designed to help drivers quickly find a free space, improve parking space and ease traffic. Sensors embedded in the ground will determine whether parking spaces are occupied or free. Drivers will be able to get
-                    real-time parking information. Drivers will be able to easily find a free space using a map when only a few parking spaces are available.</p>
-                <p>
-                    <b>Technologies:</b> C/C++, microcontrollers
-                </p>
-                <p>
-                    <b>Role:</b>Hardware developer(working with ESP32, that works with Lora)
-                </p>
-                <p>
-                    Praxis (February 2018 – May 2018) - Praxis is a web service that will offer you a new approach to dealing with course problem, both for companies that create this course and for students who want to go through it.</p>
-                <p>
-                    <b>Technologies:</b> Python(Flask)
-                </p>
-                <p>
-                    <b>Role:</b> Back-End
-                </p>
+                <p> My projects </p>
+            </div>
+
+
+            <div class="row">
+                <article class="card col-12 col-sm-6 col-md-4 col-lg-5">
+                    <img src="img/working.jpg" class="card-img-top" alt="Tesla Model X">
+                    <div class="card-body">
+                        <h5 class="card-title">Easy Parking</h5>
+                        <p class="card-text">Easy Parking (February 2018 – now)</p>
+                        <a href="#" class="btn btn-info" data-toggle="modal" data-target="#easyParking">Info</a>
+                    </div>
+                </article>
+                <article class="card col-12 col-sm-6 col-md-4 col-lg-5">
+                    <img src="img/working.jpg" class="card-img-top" alt="Tesla Model X">
+                    <div class="card-body">
+                        <h5 class="card-title">Praxis</h5>
+                        <p class="card-text">Praxis (February 2018 – May 2018)</p>
+                        <a href="#" class="btn btn-info" data-toggle="modal" data-target="#praxis">Info</a>
+                    </div>
+                </article>
             </div>
             <h1 id="contacts">How you can contact with me</h1>
             <div class="my-contacts">
@@ -92,80 +76,99 @@
                     <a href="https://www.facebook.com/stepan.petryykovych">Facebook</a>
                     <a href="https://www.instagram.com">Instagram</a>
                     <p>Or you can send me some message at this form</p>
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1">@</span>
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                         </div>
-                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-                    </div>
-
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon2">
-                        <div class="input-group-append">
-                            <span class="input-group-text" id="basic-addon2">@gmail.com</span>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">Username</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Username">
                         </div>
-                    </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
                 </div>
+                <footer>
+                    Copyright. Bla bla bla bla
+                </footer>
+            </div>
 
-                <div class="modal fade" id="easyParking" tabindex="-1" role="dialog" aria-labelledby="productInfoLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="productInfoLabel">Easy parking</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+
+
+
+</body>
+
+<div class="modal fade" id="easyParking" tabindex="-1" role="dialog" aria-labelledby="productInfoLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="productInfoLabel">Project</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                   <span aria-hidden="true">&times;</span>
                                 </button>
-                            </div>
-                            <div class="modal-body">
-                                <article class="card">
-                                    <img src="img/working.jpg" class="card-img-top" alt="Tesla Model X">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Easy Parking</h5>
-                                        <p class="card-text">Easy Parking (February 2018 – now) - is designed to help drivers quickly find a free space, improve parking space and ease traffic. Sensors embedded in the ground will determine whether parking spaces are occupied
-                                            or free. Drivers will be able to get real-time parking information. Drivers will be able to easily find a free space using a map when only a few parking spaces are available.</p>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
+            </div>
+            <div class="modal-body">
+                <article class="card">
+                    <img src="img/working.jpg" class="card-img-top" alt="Tesla Model X">
+                    <div class="card-body">
+                        <h5 class="card-title">Easy parking</h5>
+                        <p class="card-text">Easy Parking (February 2018 – now) - is designed to help drivers quickly find a free space, improve parking space and ease traffic. Sensors embedded in the ground will determine whether parking spaces are occupied or free. Drivers
+                            will be able to get real-time parking information. Drivers will be able to easily find a free space using a map when only a few parking spaces are available.</p>
+                        <p>
+                            <b>Technologies:</b> C/C++, microcontrollers
+                        </p>
+                        <p>
+                            <b>Role:</b>Hardware developer(working with ESP32, that works with Lora)
+                        </p>
                     </div>
-                </div>
-                <div class="modal fade" id="praxis" tabindex="-1" role="dialog" aria-labelledby="productInfoLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="productInfoLabel">Praxis</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <article class="card">
-                                    <img src="img/working.jpg" class="card-img-top" alt="Tesla Model X">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Praxis</h5>
-                                        <p class="card-text">Praxis (February 2018 – May 2018) - Praxis is a web service that will offer you a new approach to dealing with course problem, both for companies that create this course and for students who want to go through it.</p>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </article>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
         </div>
-        <footer>
-            Copyright. Bla bla bla bla
-        </footer>
     </div>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
+</div>
+<div class="modal fade" id="praxis" tabindex="-1" role="dialog" aria-labelledby="productInfoLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="productInfoLabel">Project</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+            </div>
+            <div class="modal-body">
+                <article class="card">
+                    <img src="img/working.jpg" class="card-img-top" alt="Tesla Model X">
+                    <div class="card-body">
+                        <h5 class="card-title">Praxis</h5>
+                        <p class="card-text">Praxis (February 2018 – May 2018) - Praxis is a web service that will offer you a new approach to dealing with course problem, both for companies that create this course and for students who want to go through it.</p>
+                        <p>
+                            <b>Technologies:</b> Python(Flask)
+                        </p>
+                        <p>
+                            <b>Role:</b> Back-End
+                        </p>
+                    </div>
+                </article>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/index.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </html>
